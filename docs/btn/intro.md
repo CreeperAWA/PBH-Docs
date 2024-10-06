@@ -37,7 +37,7 @@ LibTorrent 引入了一种以牙还牙，针锋相对的反吸血算法。如果
 
 ## 答案是 BTN
 
-BTN（全程 BitTorrent Threat Network），它由 BTN 服务器和 BTN 客户端组成。通过 [BTN 协议](https://github.com/PBH-BTN/BTN-Spec) 交换数据。
+BTN（全称 BitTorrent Threat Network），它由 BTN 服务器和 BTN 客户端组成。通过 [BTN 协议](https://github.com/PBH-BTN/BTN-Spec) 交换数据。
 
 BTN 客户端通过 PCB 等方式发现了异常 Peer 后，便会通过 BTN 协议定时上报到服务器。这样我们就可以集合大量客户端的数据，生成一份异常 IP 列表，并通过 BTN 协议再下发给不同的客户端，在开始吸血之前就将它们屏蔽在外。
 
