@@ -1,8 +1,8 @@
 {
-  "label": "系统挂接",
+	"label": "Hook",
   "position": 8,
   "link": {
     "type": "generated-index",
-    "description": "将 PeerBanHelper 连接到各个下载器"
+		"description": "外部Hook"
   }
 }

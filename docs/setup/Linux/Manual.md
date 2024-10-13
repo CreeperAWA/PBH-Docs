@@ -1,15 +1,15 @@
 ---
-sidebar_position: 8
+sidebar_position: 2
 ---
 
 
-# Linux 手动部署
+# 手动部署
 
 请注意：我们更推荐您使用 [Docker部署](./Docker.md)
 
-## Debian/Ubuntu/Kali Linux
+## 安装依赖
 
-使用 apt 工具安装 OpenJDK 21 或更高版本：
+使用你的包管理器安装 OpenJDK 21 或更高版本（此处以 apt 为例）：
 
 ```shell
 sudo apt-get update
@@ -30,7 +30,8 @@ OpenJDK Runtime Environment (build xxxxxxx)
 OpenJDK 64-Bit Server VM (build xxxxxxx, mixed mode, sharing)
 ```
 
-访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，下载 JAR 文件。  
+## 下载JAR
+访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，下载 JAR 文件。
 使用命令来启动 PBH：
 ```shell
 java -jar -Xmx256M -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar 替换这段文字为JAR文件的文件名

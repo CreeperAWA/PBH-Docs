@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Windows 便携版
+# 便携版
 
 ## 下载和安装
 

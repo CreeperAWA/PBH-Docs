@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Docker
@@ -8,15 +8,15 @@ Docker 部署是 PeerBanHelper 推荐的部署方式。使用 PBH 提供的示�
 
 ## 获取版本标签
 
-首先访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，找到如图所示的 “Docker 用户” 章节，并复制镜像标签备用。  
+首先访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，找到如图所示的 “Docker 用户” 章节，并复制镜像标签备用。
 
 ![image-tag](./assets/docker-tag.png)
 
-**不要拉取 latest 镜像，由于镜像缓存的问题，你可能会得到一个远古/开发版本，出问题将无法获得支持。**  
+**不要拉取 latest 镜像，由于镜像缓存的问题，你可能会得到一个远古/开发版本，出问题将无法获得支持。**
 
 ## 使用 Docker Compose 部署
 
-找一个合适的位置创建一个目录作为 PBH 的数据存放位置，并将工作目录切换到此位置。  
+找一个合适的位置创建一个目录作为 PBH 的数据存放位置，并将工作目录切换到此位置。
 保存下面的内容到 docker-compose.yml 文件。
 
 ```yaml
@@ -40,7 +40,7 @@ services:
 
 ## 使用 Docker CLI 部署
 
-找一个合适的位置创建一个目录作为 PBH 的数据存放位置，并将工作目录切换到此位置。  
+找一个合适的位置创建一个目录作为 PBH 的数据存放位置，并将工作目录切换到此位置。
 执行命令：
 
 ```shell

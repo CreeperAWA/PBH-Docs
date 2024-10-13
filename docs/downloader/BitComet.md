@@ -6,6 +6,20 @@ sidebar_position: 5
 
 PeerBanHelper 使用 BitComet WebAPI 与 BitComet 交互。本章将介绍如何为 BitComet 启用 WebAPI 并将 PeerBanHelper 与 BitComet 连接。  
 
+## 提示
+
+特别提示：BitComet 的支持目前处于高度实验性的状态，对封禁效果和运行稳定性不做任何保证。
+
+BitComet 用户可能频繁遇到 “正在封禁的 Peer 已处于封禁列表中”，此问题是由于 BitComet 的封禁操作是异步处理的，您可以安全的忽略这个警告（除非它连续不停地一直在提示）。  
+如果您遇到封禁线程未响应或 "Unable to retrieve peers" 的错误提示，这通常是由于 BitComet 的 WebAPI 超时未响应的问题。该问题已被汇报给 BitComet，但目前尚未得到修复。请您无需担心，PBH 会在下一次封禁流程中，重新获取。
+
+:::danger
+
+重要！BitComet 用户请务必将 `data/profile.yml` 中的 `fast-pcb-test-percentage` 的值设置为 `-1`，否则会出现大量误封禁。
+:::
+
+
+
 ## 确认版本
 
 PeerBanHelper 使用的 WebAPI 仅在 `v2.10 Beta6 [20240928]` 或者更高版本中可用。截至本文撰写时，v2.10 正式版还未发布。如果已发布正式版，请直接使用 v2.10 或者更高版本的正式版。  

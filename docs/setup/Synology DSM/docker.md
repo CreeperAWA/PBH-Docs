@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Synology DSM 群晖（Docker）
+# Docker方式
 
 ## 创建数据目录
 
@@ -22,11 +22,11 @@ sidebar_position: 6
 
 ## 获取版本标签
 
-首先访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，找到如图所示的 “Docker 用户” 章节，并复制镜像标签备用。  
+首先访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，找到如图所示的 “Docker 用户” 章节，并复制镜像标签备用。
 
-![image-tag](./assets/docker-tag.png)
+![image-tag](../assets/docker-tag.png)
 
-**不要拉取 latest 镜像，你可能会得到一个远古/开发版本，出问题将无法获得支持。**  
+**不要拉取 latest 镜像，你可能会得到一个远古/开发版本，出问题将无法获得支持。**
 
 ```yaml
 version: "3.9"

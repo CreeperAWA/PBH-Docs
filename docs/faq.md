@@ -4,11 +4,17 @@
 
 清除浏览器缓存。
 
-## 启动报错 Failed to bind to port
+## 启动报错 Failed to bind to port / Port already in use. Make sure no other process is using port XXXX and try again.
 
-同时启动了两个 PeerBanHelper 或者端口被占用导致端口冲突。
+同时启动了两个 PeerBanHelper（特别常见于安装时错误勾选了 “安装为系统服务”）；或者端口被占用导致端口冲突（如 Uplay/Ubisoft Connect 等）。
 
-[尝试更改 WebUI 端口](./network/http-server.md#更改-webui-端口)
+### 如果是安装为了系统服务
+
+如果你不清楚这是做什么的，请运行卸载程序从系统中删除系统服务，重启后重新安装。
+
+### 如果是 Uplay/Ubisoft Connect 正在运行；其它程序占用 WebUI 端口
+
+请先退出，或者[更改 WebUI 端口](./network/http-server.md#更改-webui-端口)
 
 ## 127.0.0.1 或者 localhost 连不上下载器
 

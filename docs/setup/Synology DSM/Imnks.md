@@ -2,11 +2,11 @@
 sidebar_position: 5
 ---
 
-# Synology DSM 群晖（套件）
+# 套件方式
 
 ## 添加矿神 SPK7 源
 
-PeerBanHelper 与 [imnks.com](https://imnks.com/) 合作，将 PeerBanHelper 以容器套件的方式带到群晖的套件中心，并提供安装和更新服务。  
+PeerBanHelper 与 [imnks.com](https://imnks.com/) 合作，将 PeerBanHelper 以容器套件的方式带到群晖的套件中心，并提供安装和更新服务。
 
 首先，请跟随[矿神SPK源官方教程](https://imnks.com/1780.html)，为您的 DSM 设备启用矿神社区源。
 
